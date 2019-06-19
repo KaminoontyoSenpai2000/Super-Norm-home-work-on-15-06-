@@ -1,0 +1,386 @@
+body {
+  background-color: #ebecf3;
+  font-family: Roboto, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h2 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.grid-label-1 {
+  grid-area: grid-label-1;
+}
+
+.grid-label-2 {
+  grid-area: grid-label-2;
+}
+
+.grid-label-3 {
+  grid-area: grid-label-3;
+}
+
+.grid-label-4 {
+  grid-area: grid-label-4;
+}
+
+.grid-label-5 {
+  grid-area: grid-label-5;
+}
+
+.grid-label-6 {
+  grid-area: grid-label-6;
+}
+
+.grid-label-7 {
+  grid-area: grid-label-7;
+}
+
+.big-block-1 {
+  grid-area: big-block-1;
+}
+
+.big-block-2 {
+  grid-area: big-block-2;
+}
+
+.big-block-3 {
+  grid-area: big-block-3;
+}
+
+.grid-block-1 {
+  grid-area: grid-block-1;
+}
+
+.grid-block-2 {
+  grid-area: grid-block-2;
+}
+
+.grid-block-3 {
+  grid-area: grid-block-3;
+}
+
+.grid-block-4 {
+  grid-area: grid-block-4;
+}
+
+.grid-block-5 {
+  grid-area: grid-block-5;
+}
+
+.grid-block-6 {
+  grid-area: grid-block-6;
+}
+
+.grid-block-7 {
+  grid-area: grid-block-7;
+}
+
+.grid-block-8 {
+  grid-area: grid-block-8;
+}
+
+.grid-block-9 {
+  grid-area: grid-block-9;
+}
+
+.grid-block-10 {
+  grid-area: grid-block-10;
+}
+
+.grid-block-11 {
+  grid-area: grid-block-11;
+}
+
+.grid-block-12 {
+  grid-area: grid-block-12;
+}
+
+.grid-block-13 {
+  grid-area: grid-block-13;
+}
+
+.grid-block-14 {
+  grid-area: grid-block-14;
+}
+
+.grid-block-15 {
+  grid-area: grid-block-15;
+}
+
+.grid-block-16 {
+  grid-area: grid-block-16;
+}
+
+.grid-block-17 {
+  grid-area: grid-block-17;
+}
+
+.grid-block-18 {
+  grid-area: grid-block-18;
+}
+
+.grid-block-19 {
+  grid-area: grid-block-19;
+}
+
+.grid-block-20 {
+  grid-area: grid-block-20;
+}
+
+.grid-block-21 {
+  grid-area: grid-block-21;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 225px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 170px 250px 250px 250px;
+  justify-content: center;
+  grid-auto-flow: row;
+  grid-template-areas:". big-block-1 big-block-2 big-block-3" 
+  "grid-label-1 grid-block-1 grid-block-8 grid-block-15" 
+  "grid-label-2 grid-block-2 grid-block-9 grid-block-16"
+  "grid-label-3 grid-block-3 grid-block-10 grid-block-17"
+  "grid-label-4 grid-block-4 grid-block-11 grid-block-18"
+  "grid-label-5 grid-block-5 grid-block-12 grid-block-19"
+  "grid-label-6 grid-block-6 grid-block-13 grid-block-20"
+  "grid-label-7 grid-block-7 grid-block-14 grid-block-21";
+}
+
+.stars {
+  width: 100px;
+  padding-top: 20px;
+}
+
+.product-image {
+  width: 150px;
+}
+
+.grid-block {
+  text-align: center;
+  border-top: 1px solid silver;
+}
+
+.grid-label {
+  border-top: 1px solid silver;
+  padding-top: 18px
+}
+
+.big-block {
+  text-align: center;
+}
+
+.white-background {
+  background-color: white;
+}
+
+.blue {
+  background-color: rgb(97,101,255);
+  color: white;
+}
+
+.big-block-2 {
+  margin-top: -10px;
+  padding-top: 10px;
+}
+
+.grid-block-14 {
+  margin-bottom: -10px;
+}
+
+
+
+@media (max-width: 992px) {
+  .grid {
+  display: grid;
+  grid-template-rows: 270px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-auto-flow: row;
+  justify-content: center;
+  grid-template-areas:"big-block-1 big-block-2 big-block-3" 
+  "grid-label-1 grid-label-1 grid-label-1" 
+  "grid-block-1 grid-block-8 grid-block-15"
+  "grid-label-2 grid-label-2 grid-label-2" 
+  "grid-block-2 grid-block-9 grid-block-16"
+  "grid-label-3 grid-label-3 grid-label-3"
+  "grid-block-3 grid-block-10 grid-block-17"
+  "grid-label-4 grid-label-4 grid-label-4"
+  "grid-block-4 grid-block-11 grid-block-18"
+  "grid-label-5 grid-label-5 grid-label-5"
+  "grid-block-5 grid-block-12 grid-block-19"
+  "grid-label-6 grid-label-6 grid-label-6"
+  "grid-block-6 grid-block-13 grid-block-20"
+  "grid-label-7 grid-label-7 grid-label-7"
+  "grid-block-7 grid-block-14 grid-block-21";
+  }
+
+  .big-block-2 {
+  margin-top: 0;
+  padding-top: 0;
+  }
+
+  .grid-block-14 {
+  margin-bottom: 0;
+  }
+
+  .white-background {
+  background-color: transparent;
+  }
+
+  .blue {
+  background-color: white;
+}
+
+  .background-white {
+    grid-column: 2 / 3;
+    grid-row: 1 / 16; 
+    background-color: white;
+  }
+  .silver-color {
+    color: silver;
+  }
+  h2, h3 { 
+    color: black;
+  }
+
+  .big-block {
+  text-align: left;
+  }
+  .grid-block {
+    text-align: left;
+  }
+
+  .padding-grid {
+    padding-left: 20px;
+  }
+
+  .border-none {
+    border: none;
+  }
+
+  .grid-label {
+    padding-top: 20px;
+  }
+
+  .stars {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+  display: grid;
+  grid-template-rows: 270px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-auto-flow: row;
+  justify-content: center;
+  grid-template-areas:"big-block-1 big-block-2 big-block-3" 
+  "grid-label-1 grid-label-1 grid-label-1" 
+  "grid-block-1 grid-block-8 grid-block-15"
+  "grid-label-2 grid-label-2 grid-label-2" 
+  "grid-block-2 grid-block-9 grid-block-16"
+  "grid-label-3 grid-label-3 grid-label-3"
+  "grid-block-3 grid-block-10 grid-block-17"
+  "grid-label-4 grid-label-4 grid-label-4"
+  "grid-block-4 grid-block-11 grid-block-18"
+  "grid-label-5 grid-label-5 grid-label-5"
+  "grid-block-5 grid-block-12 grid-block-19"
+  "grid-label-6 grid-label-6 grid-label-6"
+  "grid-block-6 grid-block-13 grid-block-20"
+  "grid-label-7 grid-label-7 grid-label-7"
+  "grid-block-7 grid-block-14 grid-block-21";
+  }
+
+  .big-block-2 {
+  margin-top: 0;
+  padding-top: 0;
+  }
+
+  .grid-block-14 {
+  margin-bottom: 0;
+  }
+
+  .white-background {
+  background-color: transparent;
+  }
+
+  .blue {
+  background-color: transparent;
+}
+
+  .background-white {
+    grid-column: 2 / 3;
+    grid-row: 1 / 16; 
+    background-color: transparent;
+  }
+  .silver-color {
+    color: grey;
+  }
+  h2, h3 { 
+    color: black;
+  }
+
+  .big-block-2 {
+  text-align: center;
+  }
+
+   .big-block-3 {
+  text-align: center;
+  }
+
+  .grid-block {
+    text-align: center;
+  }
+
+  .border-none {
+    border: none;
+  }
+
+  .grid-label {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .stars {
+    padding-top: 20px;
+  }
+
+  .price {
+    padding-top: 20px;
+  }
+}
+
